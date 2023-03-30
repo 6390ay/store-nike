@@ -1,0 +1,67 @@
+.view {
+  padding-bottom: 130px;
+
+  &__block {
+    position: relative;
+  }
+  &__title {
+    @include text(700,43px,130%,#E5F2E1);
+    position: absolute;
+    top: 20%;
+    left: -20%;
+    transform: rotate(-90deg);
+    z-index: -1;
+  }
+  &__row {
+    display: flex;
+    padding-left: 45px;
+    align-items: center;
+  }
+  &__card {
+    padding: 143px 158px 182px 98px;
+    background: #F6FFF3;
+    border-radius: 10px;
+    &-video {
+      position: relative;
+      padding: 170px 260px !important;
+      background: url("../images/video.png") center/cover no-repeat;
+      left: -60px;
+    }
+    &-title {
+      @include text(700, 37px, 130%, #051101);
+    }
+    &-desc {
+      @include text(400,16px,150%,#05110170);
+    }
+    &-play {
+      width: 92px;
+      height: 92px;
+      border-radius: 50%;
+      align-items: center;
+      justify-content: center;
+      background: $greenLight;
+      position: relative;
+      span {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+}
+
+
+@media (max-width: 1124px) {
+  .view__title{
+    position: static;
+    transform: rotate(0deg);
+  }
+  .view__card{
+    padding: 100px 50px;
+  }
+  .view__card-video{
+    position: static;
+    left: 0;
+  }
+}
