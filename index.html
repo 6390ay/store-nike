@@ -6,21 +6,26 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="src/style/style.css">
     <link
             rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
     />
+
     <link
             rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
     />
+
+
+    <link rel="stylesheet" href="src/style/style.css">
+    <link rel="stylesheet" href="src/style/animate.css">
+    <link rel="stylesheet" href="../../styles/">
 </head>
 <body>
 
 <header class="header">
     <div class="container">
-        <nav class="header__nav">
+        <nav class="header__nav wow fadeInLeft">
             <h1 class="header__logo"><img src="./src/images/logo.svg" alt="Store"></h1>
             <div class="header__list">
                 <div class="header__menu">
@@ -28,6 +33,7 @@
                     <a href="./src/pgs/product/index.html" class="header__link">Product</a>
                     <a href="#" class="header__link">About</a>
                     <a href="#" class="header__link">Review</a>
+                    <a href="#" class="header__link">Contact</a>
                 </div>
                 <button class="btn header__btn">SHOP NOW</button>
             </div>
@@ -44,7 +50,7 @@
 <main>
     <section class="walk">
         <div class="container">
-            <div class="walk__content">
+            <div class="walk__content wow rubberBand">
                 <div class="walk__info">
                     <p class="walk__info-suptitle">Bring power to your steps. <span><svg width="51" height="18" viewBox="0 0 51 18" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M28.6036 6.15476L25.4862 6.97332L16.8365 9.23768C13.7818 9.99351 11.1097 11.0002 8.53487 10.119C5.03484 8.60729 5.09756 4.67446 7.70691 0.490723C3.09351 4.29811 -5.2081 16.473 6.01962 17.7024C7.44974 17.8905 9.99636 17.3887 12.7625 16.2252L25.4862 11.0034L50.5823 0.741621L28.6036 6.15476Z" fill="#87D16D"/>
@@ -102,7 +108,7 @@
         </div>
     </section>
 
-    <section class="product">
+    <section class="product wow slideInLeft">
         <div class="container">
             <h2 class="product__title">Our Latest Product <p class="product__title-desc">Now that you have a ready strategy to move forward, it’s time to
                 <br> come up with some ideas.</p></h2>
@@ -181,7 +187,7 @@
         </div>
     </section>
 
-    <section class="view">
+    <section class="view wow slideInUp">
         <div class="container">
             <div class="view__block">
                 <h2 class="view__title">View</h2>
@@ -208,7 +214,7 @@
         </div>
     </section>
 
-    <section class="best">
+    <section class="best wow swing">
         <div class="container">
             <div class="best__row">
                 <div class="best__card best__card-left">
@@ -244,7 +250,7 @@
         </div>
     </section>
 
-    <section class="now">
+    <section class="now wow pulse">
         <div class="container">
             <div class="now__content">
                 <h2 class="now__title">Get Started Now</h2>
@@ -254,6 +260,34 @@
         </div>
     </section>
 </main>
+<section style="padding: 205px 0 77px" class="best wow bounceInDown"> </section>
+<section class="tabs">
+    <div class="container">
+        <div class="tabs__row">
+            <div class="tabs__tab">
+                <button class="tabs__tab-nav-btn active" data-tab="tabs1">Tabs1</button>
+                <button class="tabs__tab-nav-btn " data-tab="tabs2">Tabs2 </button>
+                <button class="tabs__tab-nav-btn" data-tab="tabs3">Tab3 </button>
+                <button class="tabs__tab-nav-btn" data-tab="tabs4">Tab4 </button>
+            </div>
+            <div class="tabs_container">
+                <div class="tabs__content-item tabs1 active" id="tabs1" style="color: #5CBE3A">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos explicabo ipsum iusto nam, natus nemo nihil placeat quam quidem quisquam reiciendis sint ut velit voluptatem voluptates! Aperiam expedita fugiat libero nihil, porro temporibus totam velit. Alias beatae consequuntur cupiditate deleniti dignissimos dolorem earum eius eum id ipsa ipsam iusto, labore, libero nemo non, nostrum numquam obcaecati officiis perferendis porro quam qui quidem ratione sequi tenetur voluptatem voluptatum? Accusamus, ad asperiores assumenda blanditiis cupiditate debitis delectus dicta, dignissimos enim et eum facilis impedit, inventore ipsam itaque labore molestias nihil nobis obcaecati pariatur quasi quidem quisquam quod recusandae saepe sit tempora totam?
+                </div>
+                <div class="tabs__content-item tabs2" id="tabs2" style="color: blue">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos explicabo ipsum iusto nam, natus nemo nihil placeat quam quidem quisquam reiciendis sint ut velit voluptatem voluptates! Aperiam expedita fugiat libero nihil, porro temporibus totam velit. Alias beatae consequuntur cupiditate deleniti dignissimos dolorem earum eius eum id ipsa ipsam iusto, labore, libero nemo non, nostrum numquam obcaecati officiis perferendis porro quam qui quidem ratione sequi tenetur voluptatem voluptatum? Accusamus, ad asperiores assumenda blanditiis cupiditate debitis delectus dicta, dignissimos enim et eum facilis impedit, inventore ipsam itaque labore molestias nihil nobis obcaecati pariatur quasi quidem quisquam quod recusandae saepe sit tempora totam?
+                </div>
+                <div class="tabs__content-item tabs3" id="tabs3" style="color: red">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos explicabo ipsum iusto nam, natus nemo nihil placeat quam quidem quisquam reiciendis sint ut velit voluptatem voluptates! Aperiam expedita fugiat libero nihil, porro temporibus totam velit. Alias beatae consequuntur cupiditate deleniti dignissimos dolorem earum eius eum id ipsa ipsam iusto, labore, libero nemo non, nostrum numquam obcaecati officiis perferendis porro quam qui quidem ratione sequi tenetur voluptatem voluptatum? Accusamus, ad asperiores assumenda blanditiis cupiditate debitis delectus dicta, dignissimos enim et eum facilis impedit, inventore ipsam itaque labore molestias nihil nobis obcaecati pariatur quasi quidem quisquam quod recusandae saepe sit tempora totam?
+                </div>
+                <div class="tabs__content-item tabs4" id="tabs4" style="color: yellow">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos explicabo ipsum iusto nam, natus nemo nihil placeat quam quidem quisquam reiciendis sint ut velit voluptatem voluptates! Aperiam expedita fugiat libero nihil, porro temporibus totam velit. Alias beatae consequuntur cupiditate deleniti dignissimos dolorem earum eius eum id ipsa ipsam iusto, labore, libero nemo non, nostrum numquam obcaecati officiis perferendis porro quam qui quidem ratione sequi tenetur voluptatem voluptatum? Accusamus, ad asperiores assumenda blanditiis cupiditate debitis delectus dicta, dignissimos enim et eum facilis impedit, inventore ipsam itaque labore molestias nihil nobis obcaecati pariatur quasi quidem quisquam quod recusandae saepe sit tempora totam?
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 
 <div class="overlay">
     <div class="popup">
@@ -275,7 +309,7 @@
     </div>
 </div>
 
-<footer class="footer">
+<footer class="footer wow fadeInDownBig">
     <div class="container">
         <div class="footer__nav">
             <h2 class="footer__logo">
@@ -311,6 +345,10 @@
 <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="src/js/main.js"></script>
+<script src="src/js/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
 <script>
     var swiper = new Swiper(".mySwiper", {
         spaceBetween: 10,
